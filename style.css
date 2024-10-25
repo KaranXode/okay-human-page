@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-xsm{
+    max-width: 767px;
+    margin: auto;
+}
+.bg-training{
+    background-color: #F9F6F4;
+    padding: 24px;
+}
+.hero-img{
+    max-width: 100%;
+
+}
+.heading{
+    font-family: 'Raleway';
+}
+.heading-sm{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 16px;
+    color: #2F6079;
+}
+.heading-md{
+    font-size: 22px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color: #15364C;
+}
+  
+.heading-lg{
+    font-size: 48px;
+    font-weight: 900;
+    font-family: "Inter", sans-serif;
+    color: #15364C;
+    margin-bottom: 48px;
+}
+
+@media (max-width: 768px) {
+    .heading-sm{
+        font-size: 14px;
+    }
+    .heading-md{
+        font-size: 18px;
+    }
+    .heading-lg{
+        font-size: 36px;
+    }
+
+    
+}
+.btn-large{
+    max-width: 444px;
+    width: 100%;
+}
+.btn-medium{
+    max-width: 300px;
+    width: 100%;
+}
+.btn-small{
+    max-width: 268px;
+    width: 100%;
+}
+.custom-btn{
+    font-size: 16px; 
+    padding: 6px 24px;
+    border: none;
+    border-radius: 8px;
+    color: #15364C;
+    font-weight: 600;
+    background-color: #E8D0CD;
+    font-family: "Inter",sans-serif;
+}
+.end-title{
+    color: #2F6079;
+    font-size: 28px;
+    font-family: "Inter", sans-serif;
+    text-align: right;
+    padding: 24px 0;
+}
+select{
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+    position: relative;
+}
+
+select::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #15364C;
+
+}
+@media (max-width: 768px) {
+    .custom-btn{
+        font-size: 14px;
+    }
+    .bg-training{
+        padding: 24px 0;
+    }
+    .hero-img{
+        max-width: 60%;
+    
+    }
+    .end-title{
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+.form-label{
+    color: #2F6079;
+    font-size: 16px;
+}
+.form-control{
+    color: #AAAFB2 !important;
+}
+.white-space-nowrap{
+    white-space: nowrap;
+}
+/* ol li::marker{
+    content: "";
+    background-color: #9FC4D4;
+    color: #ffffff;
+    border-radius: 50%;
+} */
+.bg-training :is(ol,ul) li{
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 24px;
+    color: #2F6079;
+
+}
+.bg-training p{
+    color: #2F6079;
+    font-size: 16px;
+}
+.subheading{
+    font-size: 22px;
+    font-family: "Inter", sans-serif;
+    color: #15364C;
+    margin-bottom: 48px;
+}
+.flex-50{
+    flex: 0 0 50%;
+}
+
+.hero-main{
+    background: #1D344A;
+}
+.h-70vh{
+    height: 70vh;
+}
+
+.hamburger {
+    width: 35px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px)  {
+    .hamburger{
+        width: 30px;
+        height: 24px;
+    }
+    .form-label{
+        font-size: 14px;
+
+    }
+    .form-control{
+        
+    font-size: 14px;
+    }
+    .bg-training :is(ol,ul) li{
+        font-size: 14px;
+    }
+    
+  }
+  
+  .hamburger span {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Optional: Adding animation for open/close */
+  .hamburger.open span:nth-child(1) {
+    transform: translateY(12px) rotate(45deg);
+  }
+  
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.open span:nth-child(3) {
+    transform: translateY(-12px) rotate(-45deg);
+  }
+  
+.hero-main .navbar-brand{
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.hero-section{
+    background-color: #F9F6F4;
+}
+
+.hero-section-ourStory{
+    color: #15364C;
+    font-size: 22px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+
+
+}
+
+.hero-content {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  color: #2f6079;
+}
+footer {
+  background-color: #15364c;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+}
+footer .nav-item {
+  font-size: 14px;
+}
+
+.insta-ic{
+    padding-right: 30px;
+}
