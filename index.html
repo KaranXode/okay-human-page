@@ -8,7 +8,7 @@
     <link rel="preload" href="./Fonts/Raleway-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
@@ -22,32 +22,37 @@
 
     <div class="hero-main">
         <div class="container-fluid bg-transparent d-flex justify-content-between align-content-center text-light p-4">
-            <a class="navbar-brand d-md-block d-none" href="/">BOOK A SESSION</a>
-          <a href="/"><img src="./Assets/OkayHumans_Horizontal_White.svg" alt="logo" class="img-fluid"></a>
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <div>
-                    <div class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+            <a class="navbar-brand d-md-block d-none " href="/">BOOK A SESSION</a>
+            <a href="/"><img src="./Assets/OkayHumans_Horizontal_White.svg" alt="logo" class="img-fluid logo-icon"></a>
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                aria-controls="offcanvasWithBothOptions">
 
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
+
             </button>
 
-            <!-- <div class="navbar-collapse collapse" id="navbarsExample01" style="">
-              <ul class="navbar-nav me-auto mb-2">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-              </ul>
-             
-            </div> -->
+            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
+                    <button type="button" class="btn-close pe-4" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body menubar p-4">
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
         </div>
         <div class="d-flex justify-content-center align-items-center h-70vh">
             <img src="./Assets/Bring-Your-Baggage.svg" alt="logo" class="hero-img">
@@ -57,8 +62,20 @@
         </div>
     </div>
     <section>
+        <div class="color-bar">
+            <div class="box color1"></div>
+            <div class="box color2"></div>
+            <div class="box color3"></div>
+            <div class="box color4"></div>
+            <div class="box color1"></div>
+            <div class="box color2"></div>
+            <div class="box color3"></div>
+            <div class="box color4"></div>
+        </div>
+    </section>
+    <section>
         <div class="p-md-5 p-3 container text-center">
-            <h2 class="heading-lg">Want to own an okay humans</h2>
+            <h2 class="heading-lg">Want to own an okay humans?</h2>
             <img src="./Assets/okayHuman.png" alt="img" class="img-fluid">
             <p class="m-4 heading-md">HERE’S WHAT YOU NEED TO KNOW</p>
             <p class="heading-sm mb-4">
@@ -70,8 +87,12 @@
         </div>
     </section>
     <div class="hero-section p-md-5 p-3">
-        <h2 class="heading-md text-center"> OUR STORY</h2>
+
         <div class="container-xsm">
+
+            <div class="cross-line">
+                <h2 class="heading-md text-center mx-3"> OUR STORY</h2>
+            </div>
             <div class="row flex-lg-row-reverse align-items-center py-3 g-5 justify-content-center ">
                 <div class="col-10 col-sm-8 col-lg-6">
                     <img src="./Assets/heroimg2.png" class="d-block mx-lg-auto img-fluid" alt="image" loading="lazy">
@@ -110,7 +131,9 @@
     <section>
         <div class="how-it-works p-md-5 p-3">
             <div class="container-xsm text-center">
-                <h2 class="heading-md mb-5"> HOW IT WORKS</h2>
+                <div class="cross-line">
+                    <h2 class="heading-md mb-5 mx-3"> HOW IT WORKS</h2>
+                </div>
 
                 <div class="d-flex justify-content-between align-items-center gap-md-5 p-3 flex-md-row flex-column">
                     <div class="">
@@ -146,10 +169,11 @@
 
     </section>
     <section class="bg-training">
-        <div class="container-xsm">
+        <div class="container-xsm p-3">
             <div class="text-center">
-
-                <h3 class="heading-md my-4">BECOME AN OPERATING PARTNER</h3>
+                <div class="cross-line my-4">
+                    <h3 class="heading-md  mx-3">BECOME AN OPERATING PARTNER</h3>
+                </div>
                 <div class="text-center">
                     <p class="mb-4">
                         The decision should be a no-brainer. Here’s why
@@ -157,27 +181,59 @@
                 </div>
             </div>
             <div class="d-flex flex-column flex-md-row">
-                <div class="">
-                    <ol>
-                        <li>Proven space, mental health is a $201B industry</li>
-                        <li>20+ million Americans receive mental health services each year</li>
-                        <li>Employment of therapists focusing on mental health, substance abuse, and behavioral
-                            disorders, projected to grow 22% from 2018 to 2028</li>
-                        <li>Revolutionary experience drives category separation</li>
-                        <li>Remarkable design and world-class brand, from the founders of Drybar & Squeeze</li>
-
-                    </ol>
-                </div>
                 <div class="flex-50">
-                    <ol class="custom-list">
-                        <li>Strong commitment to people, service, and community</li>
-                        <li>Industry-leading mobile and website technology</li>
-                        <li>Membership program designed to delight and engage loyal guests</li>
-                        <li>Sophisticated systems and processes that drive successful, efficient operations</li>
-                        <li>Experienced leadership focused on creating a better experience not only for guests, but for
-                            employees and operating partners as well</li>
+                    <div>
+                        <div class="list-text">
+                            <div class="count">1</div>
+                            <div>Proven space, mental health is a $201B industry</div>
+                        </div>
+                        <div class="list-text">
+                            <div class="count">2</div>
+                            <div>20+ million Americans receive mental health services each year</div>
+                        </div>
+                        <div class="list-text">
+                            <div class="count">3</div>
+                            <div>Employment of therapists focusing on mental health, substance abuse, and behavioral
+                                disorders, projected to grow 22% from 2018 to 2028
+                            </div>
+                        </div>
+                        <div class="list-text">
+                            <div class="count">4</div>
+                            <div>Revolutionary experience drives category separation</div>
+                        </div>
+                        <div class="list-text">
+                            <div class="count">5</div>
+                            <div>Remarkable design and world-class brand, from the founders of Drybar & Squeeze</div>
+                        </div>
 
-                    </ol>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex-50">
+                        <div class="list-text">
+                            <div class="count">6</div>
+                            <div>Strong commitment to people, service, and community</div>
+                        </div>
+                        <div class="list-text">
+                            <div class="count">7</div>
+                            <div>Industry-leading mobile and website technology</div>
+                        </div>
+                        <div class="list-text">
+                            <div class="count">8</div>
+                            <div>Membership program designed to delight and engage loyal guests</div>
+                        </div>
+                        <div class="list-text">
+                            <div class="count">9</div>
+                            <div>Sophisticated systems and processes that drive successful, efficient operations</div>
+                        </div>
+                        <div class="list-text">
+                            <div class="count">10</div>
+                            <div>Experienced leadership focused on creating a better experience not only for guests, but
+                                for
+                                employees and operating partners as well</div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
 
@@ -188,7 +244,9 @@
         <div class="p-md-5 p-3">
 
             <div class="container-xsm">
-                <h2 class="heading-md text-center mb-4">DESIGN & CONSTRUCTION</h2>
+                <div class="cross-line">
+                    <h2 class="heading-md text-center mb-4 mx-3">DESIGN & CONSTRUCTION</h2>
+                </div>
                 <div class="row flex-lg-row-reverse align-items-center py-3 g-5 ">
 
                     <div class="col-lg-6 ps-md-0 p-md-4 p-4">
@@ -261,7 +319,9 @@
     </section>
     <section>
         <div class="container-xsm p-md-5 p-3 ">
-            <h2 class="heading-md text-center">SIGN ME UP! </h2>
+            <div class="cross-line">
+                <h2 class="heading-md text-center mx-3">SIGN ME UP! </h2>
+            </div>
             <p class="heading-sm text-center">In order to take the next step in opening your own Okay Humans, we ask
                 that you fill out and return the following application. The information you provide will help us
                 determine if we’re a good fit. So don’t be brief or shy!</p>
@@ -277,13 +337,13 @@
                         <input type="text" class="form-control" id="inputLast" placeholder="Enter Last">
 
                     </div>
-                    <div class="mb-3 col-6">
+                    <div class="mb-3 col-sm-6 col">
                         <label for="inputEmail" class="form-label">Email address</label>
                         <input type="email" class="form-control" id="inputEmail" placeholder="Enter Email">
                     </div>
                 </div>
                 <div class="row flex-md-row flex-column">
-                    <div class="mb-3 col-6">
+                    <div class="mb-3 col-sm-6 col">
                         <label for="inputStreet" class="form-label">Street address</label>
                         <input type="text" class="form-control" id="inputStreet" placeholder="Enter Addres">
                     </div>
@@ -294,17 +354,21 @@
                     </div>
                     <div class="mb-3 col">
                         <label for="inputState" class="form-label">State</label>
-                        <select id="inputState" class="form-control" id="inputState " placeholder="Enter State">
-                            <option value="">Select</option>
-                            <option value="AL">Alabama</option>
-                            <option value="AK">Alaska</option>
+                        <div class="custom-select">
+                            <select id="inputState" class="form-control" id="inputState " placeholder="Enter State">
 
-                            <option value="HI">Hawaii</option>
-                            <option value="ID">Idaho</option>
-                            <option value="IND">India</option>
+                                <option value="">Select</option>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
 
-                            <option value="LA">Louisiana</option>
-                        </select>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IND">India</option>
+
+                                <option value="LA">Louisiana</option>
+                            </select>
+                            <span class="select-icon"></span>
+                        </div>
 
                     </div>
 
@@ -324,15 +388,19 @@
 
                     </div>
                     <div class="mb-3 col">
-                        <label for="inputCash" class="form-label white-space-nowrap">Cash Available for Investment</label>
-                        <select class="form-control" id="inputCash" placeholder=" ###">
-                            <option value="">Select</option>
-                            <option value="100">$100</option>
-                            <option value="200">$200</option>
-                            <option value="300">$300</option>
-                            <option value="400">$400</option>
-                        </select>
+                        <label for="inputCash" class="form-label white-space-nowrap">Cash Available for
+                            Investment</label>
+                        <div class="custom-select">
+                            <select class="form-control" id="inputCash" placeholder=" ###">
+                                <option value="">Select</option>
+                                <option value="100">$100</option>
+                                <option value="200">$200</option>
+                                <option value="300">$300</option>
+                                <option value="400">$400</option>
+                            </select>
+                            <span class="select-icon"></span>
 
+                        </div>
 
 
                     </div>
@@ -343,31 +411,39 @@
 
                     <div class="mb-3 col">
                         <label for="inputNet" class="form-label">Net Worth</label>
-                        <select class="form-control" id="inputNet" placeholder=" ###">
-                            <option value="">Select</option>
-                            <option value="100">$100</option>
-                            <option value="200">$200</option>
-                            <option value="300">$300</option>
-                            <option value="400">$400</option>
-                        </select>
+                        <div class="custom-select">
+
+                            <select class="form-control" id="inputNet" placeholder=" ###">
+                                <option value="">Select</option>
+                                <option value="100">$100</option>
+                                <option value="200">$200</option>
+                                <option value="300">$300</option>
+                                <option value="400">$400</option>
+                            </select>
+                            <span class="select-icon"></span>
+                        </div>
 
 
 
                     </div>
                     <div class="mb-3 col">
                         <label for="inputCash" class="form-label white-space-nowrap">Investment Time frame</label>
-                        <select class="form-control" id="inputCash" placeholder=" ###">
-                            <option value="">Select</option>
-                            <option value="100">$100</option>
-                            <option value="200">$200</option>
-                            <option value="300">$300</option>
-                            <option value="400">$400</option>
-                        </select>
+                        <div class="custom-select">
+
+                            <select class="form-control" id="inputCash" placeholder=" ###">
+                                <option value="">Select</option>
+                                <option value="100">$100</option>
+                                <option value="200">$200</option>
+                                <option value="300">$300</option>
+                                <option value="400">$400</option>
+                            </select>
+                            <span class="select-icon"></span>
+                        </div>
 
 
 
                     </div>
-                    <div class="mb-3 col-6">
+                    <div class="mb-3 col-sm-6 col">
                         <label for="inputOpen" class="form-label">Where are you interested in opening?</label>
                         <input type="text" class="form-control" id="inputOpen" placeholder="Enter">
                     </div>
@@ -375,37 +451,42 @@
                 <div class="row flex-md-row flex-column">
 
 
-                    <div class="mb-3 col-6">
+                    <div class="mb-3 col-sm-6 col">
                         <label for="inputLId" class="form-label">LinkedIn Profile URL (optional)</label>
                         <input type="text" class="form-control" id="inputId" placeholder="Enter URL">
                     </div>
                     <div class="mb-3 col">
                         <label for="inputHow" class="form-label white-space-nowrap">How did you hear about us?</label>
-                        <select class="form-control" id="inputHow" placeholder="">
-                            <option value="linkedin">LinkedIn</option>
-                            <option value="google">Google</option>
-                            <option value="twitter">Twitter</option>
-                            <option value="email">Email</option>
-                            <option value="other">Other</option>
+                        <div class="custom-select">
+
+                            <select class="form-control" id="inputHow" placeholder="">
+                                <option value="linkedin">LinkedIn</option>
+                                <option value="google">Google</option>
+                                <option value="twitter">Twitter</option>
+                                <option value="email">Email</option>
+                                <option value="other">Other</option>
 
 
-                            
-                        </select>
+
+                            </select>
+                            <span class="select-icon"></span>
+                        </div>
 
 
 
                     </div>
-                    
+
                 </div>
 
                 <div class="row flex-md-row flex-column">
 
 
                     <div class="mb-3">
-                        <label for="inputLId" class="form-label">Tell us a little bit about yourself and why you are interested in an Okay Humans franchise.</label>
+                        <label for="inputLId" class="form-label">Tell us a little bit about yourself and why you are
+                            interested in an Okay Humans franchise.</label>
                         <textarea class="form-control" id="inputLId" rows="3" placeholder="Type here"></textarea>
                     </div>
-                    
+
                 </div>
 
                 <div class="text-center my-4">
